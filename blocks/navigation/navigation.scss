@@ -1,0 +1,88 @@
+.nav {
+  @include clr;
+}
+
+.navbar {
+  margin-top: 20px;
+  float: right;
+
+  &__item {
+    margin: 0 9px;
+    display: inline-block;
+    position: relative;
+
+    &.active a {
+      color: #b60000;
+    }
+
+    &_text_capitalize {
+      text-transform: capitalize;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 31px;
+      background: url(../img/navLine.jpg) no-repeat;
+      position: absolute;
+      top: 0px;
+      right: -13px;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+
+    &.hover {
+      background-color: #000;
+      .navbar-sub {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__link {
+    padding: 9px 12px;
+    font: 700 13px/13px Arial, sans-serif;
+    color: #fff;
+    display: inline-block;
+
+      &:before,{
+   
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+          color: #b60000;
+          text-decoration: none;
+          background-color: #000;
+      }
+  }
+
+  &-sub {
+    visibility: hidden;
+    width: 150px;
+    padding: 10px 10px;
+    text-align: center;
+    background: #000;   
+    z-index: 10;
+    position: absolute;
+    top: 31px;
+    left: 0px;
+
+    &__item {
+      padding: 5px 0;
+      border-bottom: 1px solid #666;
+    }
+
+    &__link {
+      color: #fff;
+
+      &:hover {
+        color: #b60000;
+      }
+    }
+  }
+}

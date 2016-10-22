@@ -1,0 +1,50 @@
+.navigation-bottom__wrap {
+  padding: 0 35px;
+  background-color: #000;
+  @include clr;
+  box-shadow: 0 -38px 73px -42px fade-out(#fff, .5) inset, 0 45px 70px #000;
+}
+
+.navbar_mods {
+  width: 100%;
+  margin: 0;
+  float: left;
+  border-top: 1px solid #1a1a1a;
+  line-height: 0;
+}
+
+.navbar__item_mods {
+  margin: 0;
+  padding: 22px 0;
+  text-transform: capitalize;
+
+  &:hover {
+    background: none;
+  }
+
+  &.active a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  &:last-child .navbar__link_mods {
+    border: none;
+  }
+}
+
+.navbar__link_mods {
+  padding: 0 12px;
+  font: 400 11px/11px Arial, sans-serif;
+  color: #666;
+  border-right: 2px solid #666;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+}

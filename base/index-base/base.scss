@@ -1,0 +1,85 @@
+
+// ----------------------- //
+// Base styles ----------- //
+// ----------------------- //
+html {
+  width: 100%; // прижать footer книзу
+  height: 100%; // прижать footer книзу
+  background: #fff;
+}
+body {
+  width: 100%; // прижать footer книзу
+  //height: 100%; // прижать footer книзу
+  margin: 0;
+  padding: 0;
+  font-family: $ffO;
+  font-size: 14px;
+  color: #747474;
+  -webkit-font-smoothing: antialiased;
+  -webkit-bsckface-visibility: hidden;
+  background: url("../img/bgBody-1.png") no-repeat top center, url(../img/bg.jpg) repeat;
+  box-shadow: 255px 0px 155px -193px #000 inset,
+              -255px 0px 155px -193px #000 inset,
+              0 15px 120px #000 inset;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+// прижать footer книзу ********************************* //
+//******************************************************* //
+.page{ 
+  padding-top: 115px;
+  min-height: 100%;
+  overflow: hidden; // ликвидация горизонтального скрола 
+  position: relative; // точка отсчета absolute
+}
+
+.empty {
+  height: 200px; // задается относительно макета
+}
+//******************************************************* //
+
+.container {
+  width: 961px;
+  margin: 0 auto;
+  @include clr;
+}
+
+.row {@include clr;}
+
+[class*="col-"]{padding: 0;}
+
+a {
+  color: #26a6d6;
+  cursor: pointer;
+  -webkit-transition: color 0.15s linear;
+    -moz-transition: color 0.15s linear;
+      -o-transition: color 0.15s linear;
+        transition: color 0.15s linear;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #324d5b;
+}
+h1, h2, h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}

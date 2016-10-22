@@ -1,0 +1,179 @@
+.slideshow__display{
+  width: 62.4%;
+  height: 340px;
+  float: left;
+  background-color: #000;
+  border-top: 1px solid #1B1B1B;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*slidshow__text*/
+
+.slidshow__text{
+  width: 37.5%;
+  height: 340px;
+  padding: 55px 72px 0 35px;
+  float: right;
+  position: relative;
+
+}
+
+.title__slider h1{
+  font-family: "Nexa Light", Arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  margin: 0;
+}
+
+main{
+  overflow: hidden;
+}
+
+.text__slider p{
+  font-family: "Nexa Light", Arial, sans-serif;
+  font-size: 12px;
+  color: #A7A7A7;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font: 700 18px/18px Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  position: absolute;
+  top: 21px;
+  right: 13px;
+  text-align: center;
+  z-index: 2;
+}
+
+.heading {
+  width: 430px;
+  height: 75px;
+  padding: 8px 5px;
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  background-color: fade-out(#000, .6);
+
+  &__text {
+    font: 700 38px/28px Arial, sans-serif;
+    color: #fff;
+  } 
+}
+
+.dots {
+  width: 500px;
+  height: 37px;
+  padding: 5px 37px 0 0;
+  font-size: 0;
+  background: url(../img/redLine.png) no-repeat;
+  text-align:right;
+  position: absolute;
+  top: 20px;
+  right: -3px;
+  z-index: 1;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor:pointer;
+  padding: 8px 14px;
+  font: 700 11px/11px Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+}
+
+.dot-active, .dot:hover {
+  background-color: #c60000;
+}
+
+.dot-active:after {
+  display: block;
+  content: '';
+  @include arr(8, 4, #c60000, b);
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+}
+
+/* Fading animation */
+.fade_ {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+// ***** news ***** //
+
+.news {
+  list-style-image: url(../img/list-style.png);
+  list-style-position: outside;
+
+  &__item {
+    padding: 13px 0;
+    border-bottom: 1px solid #313131;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    font: 700 13px/13px Arial, sans-serif;
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    &-discription {
+      font: 400 11px/15px Arial, sans-serif;
+      color: #444;
+    }
+
+    &-author {
+      color: #666;
+      text-decoration: underline;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

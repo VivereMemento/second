@@ -1,0 +1,14 @@
+.users {
+  padding: 18px 0 45px 0;
+  
+  &__text {
+    font: 400 12px/12px Arial, sans-serif;
+    color: #666;
+    float: left;
+  }
+
+  &__text-span {
+    color: #999;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,74 @@
+.search {
+  width: 64%;
+  position: absolute;
+  top: -21px;
+  right: 15px;
+
+  &__menu {
+    width: 100%;
+    height: 55px;
+    background: url(../img/menuBg.png) no-repeat bottom right;
+
+    &__heading {
+      font: 700 27px/27px Arial, sans-serif;
+      color: #fff;
+    }
+  }
+}
+
+.menu {
+  margin-top: -19px;
+  padding: 22px 22px 0 22px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212121+38,000000+80 */
+  background: #232323; /* Old browsers */
+  background: -moz-linear-gradient(top,  #232323 38%, #000000 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #232323 38%,#000000 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #232323 38%,#000000 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+  &__item {
+    width: 32%;
+    margin-right: 4px;
+    display: inline-block;
+
+    & :last-child {
+      margin-right: 0;
+    }
+
+    &__img {
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    &-link {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: #000 url(../img/loopa.png) no-repeat center center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__heading {
+      margin-bottom: 5px;
+      font: 700 13px/13px Arial, sans-serif;
+      color: #fff;
+    }
+
+    &__text {
+      margin-bottom: 5px;
+      font: 400 12px/18px Arial, sans-serif;
+      color: #666;
+    }
+
+    &__link {
+      font: 700 11px/11px Arial, sans-serif;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

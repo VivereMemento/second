@@ -1,0 +1,6 @@
+.cars__wrap {
+  height: 320px;
+  background-color: #000;
+  @include clr;
+  position: relative;
+}

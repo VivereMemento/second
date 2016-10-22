@@ -1,0 +1,78 @@
+.tabs {
+  width: 31%;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+
+  &__controls {
+    font-size: 11px;
+  }
+
+  &__controls__item {
+    display: inline-block;
+    margin-left: -1px;
+    @extend .button-black;
+    @include br(3px 3px 0 0)
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.active a {
+      color: #fff;
+    }
+  }
+
+  &__controls__link {
+    padding: 7px 10px;
+    font: 700 11px/11px Arial, sans-serif;
+    color: fade-out(#fff, .5);
+    text-decoration: none;
+    display: block;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__list {
+    padding: 20px 22px 0 22px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212121+38,000000+80 */
+    background: #212121; /* Old browsers */
+    background: -moz-linear-gradient(top,  #212121 38%, #000000 80%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #212121 38%,#000000 80%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #212121 38%,#000000 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  &__item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &__news {
+      list-style: none;
+    }
+
+    &__news__item {
+      padding: 9px 0;
+    }
+  }
+
+  &__button {
+    margin: 5px 0 0 27px;
+    padding: 5px 10px;
+    font: 700 11px/11px Arial, sans-serif;
+    color: #fff;
+    @include br(2px);
+    @extend .button-red;
+    position: absolute; //
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

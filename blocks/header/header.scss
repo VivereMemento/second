@@ -1,0 +1,126 @@
+.headerBg {
+  background: url(../img/headerBg.png) no-repeat bottom right;
+  box-shadow: 0 90px 90px -40px #000;
+  @include clr;
+}
+
+// **************** header__top ********************** //
+
+.registration {
+  float: right;
+  @include clr;
+
+  &__list {
+    padding-top: 5px;
+    @include clr;
+    & :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-right: 16px;
+    float: left;
+  }
+
+  &__link {
+    font: 400 11px/33px Arial, sans-serif;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+// ****************** header__middle ***************** //
+
+.header__middle {
+  margin: 10px 0 12px 0;
+}
+
+.sale {
+  padding: 0 14px 0 25px;
+
+  &__item {
+    display: inline-block;
+    margin-right: 35px;
+
+    &_mods {
+      margin-right: 14px;
+    }
+  }
+
+  & :last-child {
+    margin-right: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    font: 400 12px/10px 'MinionProReg', sans-serif;
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(113, 113, 113, 0.31);
+    background-color: #222222;
+    @include br(3px);
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    font: 700 12px/12px Arial, sans-serif;
+    color: #fff;
+    letter-spacing: -0.5px;
+
+    &__link {
+      color: #717171;
+      text-transform: capitalize;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// ****************** header__bottom ***************** //
+
+.header__bottom {
+  @include clr;
+  position: relative;
+
+  &-wrap {
+    position: relative;
+    box-shadow: 58px 5px 45px -30px #000, -63px 0px 45px -40px #000;
+    @include clr;
+
+    // &:before, &:after {
+    //   display: block;
+    //   content: "";
+    //   width: 20px;
+    //   height: 302px;
+    // }
+
+    // &:before {
+    //   background: url(../img/shadowBefore.png) no-repeat;
+    //   position: absolute;
+    //   top: 25px;
+    //   left: -20px;
+    // }
+
+    // &:after {
+    //   background: url(../img/shadowAfter.png) no-repeat;
+    //   position: absolute;
+    //   top: 25px;
+    //   right: -19px;
+    // }
+  }
+}

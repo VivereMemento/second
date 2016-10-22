@@ -1,0 +1,25 @@
+.form {
+  padding-left: 5px;
+
+  &__text {
+    padding: 8px 10px 6px 10px;
+    font: 400 11px/11px Arial, sans-serif;
+    border: none;
+    @include br(2px);
+    @include bs(inset 0 3px 10px #f2f2f2);
+    @include placeholder {
+      color: #b0b0b0;
+    }
+  }
+
+  &__submit {
+    width: 60px;
+    height: 28px;
+    font: 700 11px/11px Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    border: none; 
+    background: url(../img/submitBtn.png) no-repeat;
+    vertical-align: bottom;
+  }
+}

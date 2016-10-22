@@ -1,0 +1,29 @@
+//Minion Pro
+
+@font-face {
+	@include font ("Minion Pro/Minion Pro", "MinionProReg", 400, normal);
+}
+
+// AvenirNextRounded
+
+@font-face {
+	@include font ("Avenir Next Rounded/Avenir Next Rounded w01 Reg/Avenir Next Rounded w01 Reg", "AvenirNextRoundedReg", 400, normal);
+}
+
+@font-face {
+	@include font ("Avenir Next Rounded/Avenir Next Rounded w01 Med/Avenir Next Rounded w01 Med", "AvenirNextRoundedMed", 400, normal);
+}
+
+@font-face {
+	@include font ("Avenir Next Rounded/Avenir Next Rounded w01 Demi/Avenir Next Rounded w01 Demi", "AvenirNextRoundedDemi", 400, normal);
+}
+
+//Proxima Nova Bold
+
+@font-face {
+	@include font ("Proxima Nova/Proxima Nova Reg/Proxima Nova", "ProximaNovaReg", 400, normal);
+}
+
+@font-face {
+	@include font ("Proxima Nova/Proxima Nova Semibold/Proxima Nova Semibold", "ProximaNovaSemibold", 600, normal);
+}

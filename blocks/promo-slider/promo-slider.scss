@@ -1,0 +1,147 @@
+.promo-slider {
+  margin-bottom: 45px;
+
+  &__wrap {
+    height: 333px;
+    @include bs(0 25px 85px #000);
+  }
+}
+
+.promo {
+  width: 50%;
+  height: 333px;
+  padding: 45px 40px 145px 40px;
+  float: left;
+  background-color: #fff;
+  @include bs(40px 70px 140px #000 inset);
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    @include arr (17, 30, #5C5C5C, r);
+    position: absolute;
+    top: 55;
+    right: -17;
+    z-index: 1;
+  }
+
+  &__heading {
+    font: 700 48px/48px Arial, sans-serif;
+    color: #000;
+    letter-spacing: -5px;
+
+    &-discription {
+      font: 700 11px/11px Arial, sans-serif;
+      color: #fff;
+      background-color: #666;
+    }
+  }
+
+  &__text {
+    margin-top: 15px;
+    font: 400 13px/18px Arial, sans-serif;
+    color: #666;
+  }
+}
+.slider {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  float: left;
+  &__list--wrap {
+    width: 100%;
+    height: 333px;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 2000px;
+    position: relative;
+    transition: .3s;
+    left: 0;
+    list-style: none;
+
+    &:after{
+      display: block;
+      content: '.';
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
+
+  &__item{
+    float: left;
+  }
+
+  &__pic {
+    width: 480px;
+    height: 100%;
+  }
+
+  &__controls-button{
+    position: absolute;
+    top: 50px;
+  }
+
+  &__controls-button_next{
+    right: -100px;
+  }
+
+  &__controls-button_prev{
+    left: -100px;
+  }
+}
+
+/* triggers */
+
+.triggers {
+  width: 100%;
+  height: 115px;
+  font-size: 0;
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+}
+
+.triggers__item {
+  height: 115px;
+  cursor:pointer;
+  background-color: #bbb;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: fade-out(#fff, .7);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    @include transition;
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: fade-out(#fff, .7);
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    @include transition;
+  }
+
+  &:hover:after, &:hover:before, &.active:after, &.active:before {
+    width: 90%;
+    height: 90%;
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  margin-left: 35px;
+  float: left;
+
+  &__link:hover {
+    text-decoration: none;
+  }
+
+  &__discrition {
+    opacity: 0.4;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
