@@ -6,5 +6,6 @@
 2. Аккуратную архитектуру кода.
 3. Знание CSS/CSS3 HTML/HTML5 JavaScript jQuery
 4. Верстка статичная
+5. Навыки нарезки макета в PhotoShop
 
 Вы можете посмотреть, как у меня получилось, перейдя по ссылке https://viverememento.github.io/second/
